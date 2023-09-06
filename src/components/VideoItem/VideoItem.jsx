@@ -1,16 +1,7 @@
-const VideoItem = ({ list_data }) => {
-  let videoItemsCourse = list_data.map(
-    ({ title, duration, date, description }, index) => {
-      return <option key={index}>{title}</option>;
-    }
-  );
+import Views from "../Views/Views";
 
-  return (
-    <select className="form-select" aria-label="Default select example">
-      <option value="0" selected disabled> Selecciona una opcion</option>
-      {videoItemsCourse}
-    </select>
-  );
+const VideoItem = ({ index, title, duration, date, description }) => {
+  return <li key={index}>{title} <Views></Views></li>;
 };
 
 export default VideoItem;

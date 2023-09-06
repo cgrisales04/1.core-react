@@ -1,0 +1,8 @@
+.card_zoom{
+
+}
+.card_zoom::hover {
+    width: 2%;
+    transition: ease all 1s;
+    margin: 10px;
+}
